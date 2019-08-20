@@ -1,0 +1,40 @@
+#### GERAL
+
+%  	Comentário
+
+
+#### INTERFACE
+
+. 	Significa que o resultado satisfaz sua condição
+; 	Significa que gostaria de obter uma outra resposta (Caso não exista é retoando (false ou no)
+
+#### LOGICA
+
+Listas em prolog  são sequencias de elementos colocados entre colchetes, seperados por virgula = [rosa, cravo, violeta]
+
+Atribuição em prolog, se utiliza is = X is (y+3)/2 -> Equivalente a atribuit (y+3)/2 em X
+
+Definir prioridade dos operadores (op):
+	op(500,yfx,+). => Determina que o operador + tem prioridade 500
+	op(400,yfx,*). => Determina que o operador * tem prioridade 400
+
+# Básicos
+	. 	Finaliza instrução
+	:- 	Indica uma condição (se).
+	
+# Operadores Logicos	
+	, 	Conjunção (AND)
+	; 	Disjunção (OR)
+	not Negação
+
+# Operadores Relacionais
+	> 	Maior que
+	< 	Menor que
+	=< 	Igual ou menor
+	>= 	Maior ou igual
+	= 	Igual a
+	\= 	Diferente
+	@< 	Vem antes de (alfabeto)
+	@> 	Vem depois de (alfabeto)
+	@=<	Vem antes ou na mesma posição 
+	@>=	Vem depois ou na mesma posição

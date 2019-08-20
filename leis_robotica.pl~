@@ -1,0 +1,14 @@
+mulher(ana).
+homem(pedro).
+homem(luis).
+robo(roby).
+robo(r2).
+capaz_de_fazer(roby, chutar(X)):-humano(X).
+machuca(chutar(H), H):-humano(H).
+humano(H):-homem(H);mulher(H).
+
+proibido_fazer(R, B):-robo(R),
+    capaz_de_fazer(R,B),
+    machuca(B, H),
+    humano(H).
+
